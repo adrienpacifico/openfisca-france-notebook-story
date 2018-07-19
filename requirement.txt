@@ -1,0 +1,4 @@
+matplotlib
+openfisca-france
+pandas
+bokeh
