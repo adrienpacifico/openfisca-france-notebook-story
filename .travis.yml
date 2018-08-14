@@ -1,8 +1,7 @@
-python:
-  - "3.7"  # 3.7 development branch
-# command to install dependencies
+language: python
+python: 3.6
 install:
   - pip install -r requirements.txt
 # command to run tests
 script:
-  - python -c 'print(hello)'
+  - jupyter nbconvert --log-level=10 --ExecutePreprocessor.timeout=-1 --to notebook --execute notebooks/comment_fonctionne_l_Impot_sur_le_revenu_francais.ipynb
