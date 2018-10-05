@@ -5,3 +5,7 @@ install:
 # command to run tests
 script:
   - jupyter nbconvert --log-level=10 --ExecutePreprocessor.timeout=-1 --to notebook --execute notebooks/comment_fonctionne_l_Impot_sur_le_revenu_francais.ipynb
+notifications:
+ email:
+   on_success: change
+   on_failure: always
